@@ -1,4 +1,6 @@
 choco install vcredist-all 7zip firefox googlechrome notepadplusplus dbeaver  winscp putty -y
+
+choco install wireguard -y
 choco install adobereader  -y
 choco install googlechrome  -y
 choco install chocolatey-core.extension --version 1.3.5.1 -y
