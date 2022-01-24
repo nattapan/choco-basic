@@ -1,5 +1,8 @@
 choco install vcredist-all 7zip firefox googlechrome notepadplusplus dbeaver  winscp putty -y
 
+choco install vcredist-all 7zip firefox googlechrome notepadplusplus adobereader  dotnetfx microsoft-edge  pdfcreator treesizefree  dotnet3.5 inkscape procexp gimp krita -y
+
+
 choco install wireguard -y
 choco install adobereader  -y
 choco install googlechrome  -y
