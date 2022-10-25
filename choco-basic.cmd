@@ -1,10 +1,14 @@
-choco install vcredist-all 7zip firefox googlechrome notepadplusplus dbeaver  winscp putty -y
-
+rem basic server
+choco install vcredist-all 7zip treesizefree firefox googlechrome notepadplusplus dbeaver  winscp putty -y
+rem user pc
 choco install vcredist-all 7zip firefox googlechrome notepadplusplus adobereader  dotnetfx microsoft-edge  pdfcreator treesizefree  dotnet3.5 inkscape procexp gimp krita -y
-
+rem JAVA keystore explorer (for https tomcat)
+choco install keystore-explorer.portable
+rem autohotkey dev
 choco install autohotkey scite4autohotkey  -y
-
+rem let's encrypt for windows
 choco install win-acme -y
+
 choco install wireguard -y
 choco install adobereader  -y
 choco install googlechrome  -y
