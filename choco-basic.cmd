@@ -8,6 +8,7 @@ rem autohotkey dev
 choco install autohotkey scite4autohotkey  -y
 rem let's encrypt for windows
 choco install win-acme -y
+choco install sql-server-management-studio
 
 choco install wireguard -y
 choco install adobereader  -y
