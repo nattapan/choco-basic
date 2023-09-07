@@ -1,0 +1,16 @@
+New-NetFirewallRule -DisplayName 'HTTP-Inbound' -Profile @('Domain', 'Private' ,'public') -Direction Inbound -Action Allow -Protocol TCP -LocalPort @('80', '443')
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+
+choco install 7zip treesizefree firefox googlechrome notepadplusplus dbeaver  winscp putty  sql-server-management-studio vcredist-all  -y
+
+cmd
+mkdir d:\xampp
+mklink /j c:\xampp   d:\xampp
+
+choco install xampp-73 --version 7.3.33.20220415 -y
+
+
+http://192.168.105.101/xampp-windows-x64-7.3.33-0-VC15-installer.exe
+
