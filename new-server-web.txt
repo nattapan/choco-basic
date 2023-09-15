@@ -10,6 +10,8 @@ mkdir d:\xampp
 mklink /j c:\xampp   d:\xampp
 
 choco install xampp-73 --version 7.3.33.20220415 -y
+New-NetFirewallRule -DisplayName 'SQL-OK' -Profile @('Domain', 'Private' ,'public') -Direction Inbound -Action Allow -Protocol TCP -LocalPort @('1433')
+
 
 
 http://192.168.105.101/xampp-windows-x64-7.3.33-0-VC15-installer.exe
