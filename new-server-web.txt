@@ -2,9 +2,14 @@ New-NetFirewallRule -DisplayName 'HTTP-Inbound' -Profile @('Domain', 'Private' ,
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-
-choco install 7zip treesizefree firefox googlechrome notepadplusplus dbeaver  winscp putty  sql-server-management-studio vcredist-all  -y
-
+# server MSSQL + MySQL
+choco install 7zip treesizefree --version=4.7.1.1 firefox googlechrome notepadplusplus dbeaver  winscp putty  sql-server-management-studio vcredist-all  -y
+#  MySQL
+choco install treesizefree --version=4.7.1.1  firefox googlechrome notepadplusplus dbeaver  winscp putty   vcredist-all  -y
+# treesizefree for server
+choco install treesizefree --version=4.7.1.1 -y
+# PC/notebook
+choco install treesizefree   firefox googlechrome notepadplusplus  winscp putty   vcredist-all  -y
 cmd
 mkdir d:\xampp
 mklink /j c:\xampp   d:\xampp
