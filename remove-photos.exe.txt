@@ -1,0 +1,18 @@
+1. Run Windows Store Apps Troubleshooter
+Type troubleshoot in Windows Start Search box > Click Troubleshoot > Scroll down to bottom and click Windows Store Apps > Click Run the Troubleshooter and follow on-screen directions.
+
+2. Repair / Reset Photos App
+Windows Key+i> Apps > Locate Photos by Scrolling Down > Click Advanced Options > Click Repair
+If Repair doesn't work, click Reset
+
+3. If Reset doesn't work, then you should uninstall using Powershell and reinstall the Photos App
+Windows+X > Click Windows Powershell (Admin) > Copy the below command and right click in Powershell to paste it and Enter
+
+get-appxpackage Microsoft.Windows.Photos | remove-appxpackage
+
+Now, you need to reinstall it
+Use below Powershell command to install
+
+Get-AppxPackage -allusers Microsoft.Windows.Photos | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppXManifest.xml”
+
+(If you encounter problem installing it, you can always install it from Microsoft Store)
