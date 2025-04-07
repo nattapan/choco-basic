@@ -1,3 +1,9 @@
+#Set windows timezone to thai
+
+Set-TimeZone -Id "SE Asia Standard Time"
+
+
+
 #web firewall
 New-NetFirewallRule -DisplayName 'HTTP-Inbound' -Profile @('Domain', 'Private' ,'public') -Direction Inbound -Action Allow -Protocol TCP -LocalPort @('80', '443')
 #MSSQL
