@@ -18,12 +18,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 
 # treesizefree for server
-choco install treesizefree --version=4.7.1.1 -y
+choco install treesizefree --version=4.7.1.1                       -y
 
 
 # server MSSQL + MySQL
-choco install 7zip.install   notepadplusplus  vcredist-all-y
-choco install firefox googlechrome   --ignore-checksums -y
+choco install 7zip.install   notepadplusplus  vcredist-all          -y
+choco install firefox googlechrome   --ignore-checksums             -y
 choco install dbeaver  winscp putty  sql-server-management-studio   -y
 
 #  MySQL
