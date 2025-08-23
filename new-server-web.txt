@@ -3,7 +3,10 @@
 #Set windows timezone to thai
 
 Set-TimeZone -Id "SE Asia Standard Time"
-
+#Set Locale to THAI
+Set-WinSystemLocale -SystemLocale th-TH
+Set-WinHomeLocation -GeoId 227
+Set-Culture -CultureInfo th-TH
 
 #Firewall for each role of server apply as needed.
 #web firewall
