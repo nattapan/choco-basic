@@ -35,6 +35,9 @@ choco install 7zip.install firefox googlechrome notepadplusplus dbeaver  winscp 
 # PC/notebook
 choco install 7zip.install treesizefree   firefox googlechrome notepadplusplus  winscp putty   vcredist-all  -y
 
+# disable server manager startup at logon "need for GDCC VM"
+reg add HKLM\Software\Microsoft\ServerManager /v DoNotOpenServerManagerAtLogon /d 1 /t REG_DWORD /f
+
 #install xampp
 cmd
 mkdir d:\xampp
